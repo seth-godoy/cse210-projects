@@ -32,7 +32,7 @@ class Program
         }
 
         // Get the average of the numbers list.
-        double average = (double)sum / ((double)numbers.Count - 1);
+        double average = (double)sum / (numbers.Count - 1);
 
         // Get the largest number.
         int highestNumber = 0;
