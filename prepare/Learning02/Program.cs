@@ -16,11 +16,11 @@ class Program
         job2._startYear = 2013;
         job2._endYear = 2021;
 
-        Resume resume1 = new Resume();
-        resume1._name = "John Doe";
-        resume1._jobs.Add(job1);
-        resume1._jobs.Add(job2);
+        Resume myResume = new Resume();
+        myResume._name = "John Doe";
+        myResume._jobs.Add(job1);
+        myResume._jobs.Add(job2);
 
-        resume1.DisplayResume();
+        myResume.DisplayResume();
     }
 }
