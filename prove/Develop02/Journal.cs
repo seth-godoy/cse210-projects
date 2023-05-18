@@ -8,7 +8,7 @@ class Journal
     public List<string> _prompts = new List<string>();
     public Random _randomGeneretor = new Random();
 
-    public void populatePrompts()
+    public void PopulatePrompts()
     {
         _prompts.Add("Who was the most interesting person I interacted with today?");
         _prompts.Add("What was the best part of my day?");

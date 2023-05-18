@@ -12,7 +12,7 @@ class Program
         string newEntry;
 
         Journal journal = new  Journal();
-        journal.populatePrompts();
+        journal.PopulatePrompts();
 
         string userNumber = "";
         while (userNumber != "5")
