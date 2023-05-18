@@ -6,7 +6,7 @@ class Journal
 {
     public List<string> _entries = new List<string>();
     public List<string> _prompts = new List<string>();
-    public Random randomGeneretor = new Random();
+    public Random _randomGeneretor = new Random();
 
     public void populatePrompts()
     {
@@ -24,7 +24,7 @@ class Journal
 
     public string GeneratePrompt()
     {
-        return _prompts[randomGeneretor.Next(0, 11)];
+        return _prompts[_randomGeneretor.Next(0, 11)];
     }
 
     public void DisplayJournal()
