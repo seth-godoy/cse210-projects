@@ -8,19 +8,11 @@ class Reference
     private int _lastVerse;
     private string _fullReference;
 
-    public Reference()
-    {
-        _book = "John";
-        _chapter = 3;
-        _firstVerse = 16;
-        _fullReference = $"{_book} {_chapter}:{_firstVerse}";
-    }
-
     public Reference(string book, int chapter, int firstVerse)
     {
         _book = book;
         _chapter = chapter;
-        _firstVerse = chapter;
+        _firstVerse = firstVerse;
         _fullReference = $"{_book} {_chapter}:{_firstVerse}";
     }
 
@@ -28,7 +20,7 @@ class Reference
     {
         _book = book;
         _chapter = chapter;
-        _firstVerse = chapter;
+        _firstVerse = firstVerse;
         _lastVerse = lastVerse;
         _fullReference = $"{_book} {_chapter}:{_firstVerse}-{_lastVerse}";
     }
