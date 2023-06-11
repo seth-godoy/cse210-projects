@@ -47,6 +47,8 @@ class Activity
         Console.WriteLine($"You've completed {_duration} seconds of the {_name} Activity.");
         DisplayLoadingAnimation(5);
         Console.Clear();
+
+        new Logs().SaveLog($"Date: {DateTime.Now.ToShortDateString()} — Activity: {_name} — Duration: {_duration}");
     }
 
     public void DisplayLoadingAnimation(int seconds)

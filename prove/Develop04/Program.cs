@@ -4,6 +4,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        // EXCEEDING REQUIREMENTS
+        // I show creativity by storing logs of the activities the user has done in a "logs.txt"
+        // file with date, name of the activity, and duration.
+
         // Instances
         BreathingActivity breathingActivity = new BreathingActivity();
         ReflectionActivity reflectionActivity = new ReflectionActivity();
